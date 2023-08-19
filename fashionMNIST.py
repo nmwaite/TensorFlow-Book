@@ -15,7 +15,7 @@ training_images = training_images/255.0
 test_images = test_images/255.0
 
 """
-    relu (Rectified Liear Unit) is an activation function, it returns a value if the result is greater than 0
+    relu (Rectified Linear Unit) is an activation function, it returns a value if the result is greater than 0
     softmax is the final activation function that takes the result and determines which class the image belongs to 
 """
 model = tf.keras.models.Sequential([
@@ -43,3 +43,8 @@ model.fit(training_images, training_labels, epochs=5)
 
 # evaluates the model using the test set
 model.evaluate(test_images, test_labels)
+
+
+"""
+    To explore the values of the output neurons go to page 29-30 of the book 
+"""
