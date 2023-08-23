@@ -11,3 +11,7 @@
 
 3. fashionMNISTCallback.py
    - same as 2 however utilises **callbacks** to stop training when the model accuracy reaches 95%
+  
+4. fashionMNISTCNN.py
+   - same as fashionMNIST.py however uses convolutions
+   - page 39: explains how to explore a model using 'model.summary'
