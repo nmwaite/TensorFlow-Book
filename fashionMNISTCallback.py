@@ -24,7 +24,7 @@ mnist = tf.keras.datasets.fashion_mnist
 # separates the mnist variable into a training and test set
 (training_images, training_labels), (test_images, test_labels) = mnist.load_data()
 
-# normalising the images so their pixel values lie between 0 and 1
+# normalising the imagesHorseHuman so their pixel values lie between 0 and 1
 training_images = training_images/255.0
 test_images = test_images/255.0
 

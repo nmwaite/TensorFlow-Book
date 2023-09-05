@@ -7,7 +7,7 @@ data = tf.keras.datasets.fashion_mnist
 (training_images, training_labels), (test_images, test_labels) = data.load_data()
 
 """
-    normalising the pixel values in the images so that they lie between 0 and 1
+    normalising the pixel values in the imagesHorseHuman so that they lie between 0 and 1
     to find out more about normalisation go to:
     https://developers.google.com/machine-learning/data-prep/transform/normalization
 """
@@ -38,7 +38,7 @@ model.compile(optimizer='adam',
               metrics=['accuracy'])
 
 
-# fits the training images to the training labels
+# fits the training imagesHorseHuman to the training labels
 model.fit(training_images, training_labels, epochs=5)
 
 # evaluates the model using the test set
