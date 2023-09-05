@@ -6,12 +6,12 @@ data = tf.keras.datasets.fashion_mnist  # loads the pre built database into data
 (training_images, training_labels), (test_images, test_labels) = data.load_data()
 
 
-# changes the shape of the array so that tensorflow understands that the images are greyscale
+# changes the shape of the array so that tensorflow understands that the imagesHorseHuman are greyscale
 # normalises the pixel values to lie between 0 and 1
 training_images = training_images.reshape(60000, 28, 28, 1)
 training_images = training_images/255.0
 
-# changes the shape of the array so that tensorflow understands that the images are greyscale
+# changes the shape of the array so that tensorflow understands that the imagesHorseHuman are greyscale
 # normalises the pixel values to lie between 0 and 1
 test_images = test_images.reshape(10000, 28, 28, 1)
 test_images = test_images/255.0
@@ -40,10 +40,10 @@ model.compile(optimizer='adam',
               metrics=['accuracy']
               )
 
-# fits the training images to their labels
+# fits the training imagesHorseHuman to their labels
 model.fit(training_images, training_labels, epochs=50)
 
-#evaluates the model on the test images
+#evaluates the model on the test imagesHorseHuman
 model.evaluate(test_images, test_labels)
 
 
