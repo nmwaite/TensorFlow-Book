@@ -33,6 +33,25 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
 train_datagen = ImageDataGenerator(rescale=1/255)  # creates an ImageDataGenerator which is used for data augmentation
+"""
+could change line 35 to perform image augmentation on more variables to result in a more robust model
+by creating new data to artificially increase the datasets size
+
+train_datagen = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True
+    fill_mode='nearest'
+    )
+    
+    
+    
+
+"""
 
 # specify this will generate training data, with some hyperparameters target_size, class_mode
 train_generator = train_datagen.flow_from_directory(
