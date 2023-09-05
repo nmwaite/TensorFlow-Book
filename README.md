@@ -15,3 +15,7 @@
 4. fashionMNISTCNN.py
    - same as fashionMNIST.py however uses convolutions
    - page 39: explains how to explore a model using 'model.summary'
+
+5. horseOrHuman.py
+   - uses ImageDataGenerator instead of two variables for data and labels
+   - this alows for augmentation of the data artificially adding more images to the training set to make a more robust model
