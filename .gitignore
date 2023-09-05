@@ -11,6 +11,7 @@ __pycache__/
 
 #Big Files
 *.zip
+*.h5
 
 # Distribution / packaging
 .Python
